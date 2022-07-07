@@ -1,2 +1,2 @@
-# rock-paper-scissors
-a game of rock, paper, scissors
+# mini-games
+a selection of simple games to play to kill awkward amounts of time
