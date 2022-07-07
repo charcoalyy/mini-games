@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="rps.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=VT323&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="landing-screen">
+            <h1 class="title">What to cure your boredom with today?</h1>
+            <button id="rps-play">Rock Paper Scissors</button>
+            <button id="hangman-play">Hangman</button>
+        </section>
+    
+        <section class="play-center" id="rps-play-center">
+            <h1 class="title">ROCK, PAPER, SCISSORS</h1>
+            <div class="clickables">
+                <div class="clickable" id="rock-clickable"><img src="rock.png"></div>
+                <div class="clickable" id="paper-clickable"><img src="paper.png"></div>
+                <div class="clickable" id="scissors-clickable"><img src="scissors.png"></div>
+            </div>
+            <button class="play-button" id="rps-play-button">Shoot</button>
+            <br>
+            <p id="computer-play"></p>
+            <p id="user-play"></p>
+            <p id="final-result"></p>
+        </section>
+
+        <section class="play-center" id="hangman-play-center">
+            <button class="play-button" id="hangman-play-button">Play</button>
+        </section>
+    
+    </body>
+
+    <script src="rps.js"></script>
+
+</html>
+
+<!-- to add: scoreboard, exit buttons from each center -->
+<!-- add hangman AND something else (google doodle like games) -->
+<!-- make title text appear letter by letter -->

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --main-dark: rgb(51, 51, 51);
+    --main-light: rgb(246, 246, 246);
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'VT323';
+    padding: 1rem;
+}
+
+p {
+    font-family: 'Abel';
+}
+
+.play-center, #landing-screen {
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: pink;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clickables {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.clickable img {
+    width: clamp(2rem, 8rem, 10rem);
+    height: clamp(2rem, 8rem, 10rem);
+    padding-bottom: 1rem;
+    transform: scale(1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.clickable img:hover {
+    transform: scale(1.05);
+}
+
+.clickable.selected {
+    filter: brightness(55%);
+}
+
+#landing-screen {
+    display: flex;
+}
+
+.play-center {
+    display: none;
+}
+
+.active {
+    display: flex !important
+}
+
+button {
+    style: none;
+    cursor: pointer;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    font-family: 'Abel';
+    font-size: 20px;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
